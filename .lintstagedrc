@@ -8,7 +8,7 @@
     ".*rc": [
         "jsonlint"
     ],
-    "*.js": [
+    "src/*.js": [
         "eslint"
     ],
     "*.vue": [
