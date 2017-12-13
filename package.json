@@ -1,6 +1,6 @@
 {
     "name": "maxfactor-vue-eventhandler",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "A simple Vue plugin to create global even handlers.",
     "main": "dist/index.js",
     "scripts": {
