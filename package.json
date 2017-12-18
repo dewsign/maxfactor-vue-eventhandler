@@ -1,29 +1,28 @@
 {
     "name": "maxfactor-vue-eventhandler",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "description": "A simple Vue plugin to create global even handlers.",
     "main": "./dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "precommit": "lint-staged",
-        "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+        "prepublish": "rollup -c"
     },
     "author": "Marco Mark <marco.mark@dewsign.co.uk>",
     "license": "MIT",
     "devDependencies": {
+        "babel-core": "^6.26.0",
         "babel-eslint": "^8.0.2",
+        "babel-preset-es2015-rollup": "^3.0.0",
+        "eslint": "^4.12.1",
         "eslint-config-airbnb-base": "^12.1.0",
         "eslint-plugin-import": "^2.8.0",
         "eslint-plugin-vue": "^2.1.0",
-        "eslint": "^4.12.1",
         "husky": "^0.14.3",
         "jsonlint": "^1.6.0",
         "lint-staged": "^6.0.0",
         "markdownlint-cli": "^0.5.0",
-        "laravel-mix": "^1.7.2"
+        "rollup-plugin-babel": "^3.0.3"
     },
     "dependencies": {
         "vue": "^2.5.10"
