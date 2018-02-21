@@ -1,5 +1,7 @@
 # Vue.js Event Handler Plugin
 
+[![npm](https://img.shields.io/npm/v/maxfactor-vue-eventhandler.svg?style=for-the-badge)](https://www.npmjs.com/package/maxfactor-vue-eventhandler)
+
 Authors:
 
 * [Marco Mark](mailto:marco.mark@dewsign.co.uk)
@@ -31,11 +33,3 @@ this.emit('eventhandler-init', {
     payload: 'event-data'
 })
 ```
-
-### Dependencies
-
-* Vue.js
-
-## Changelog
-
-* 0.0.1 First npm release
